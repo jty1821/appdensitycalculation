@@ -84,13 +84,12 @@ library(dplyr)
 by_city=group_by(population,Region)
 nocity=summarise(by_city,n_distinct(CityProvince))
 
-### merge two data frames by ID
+### merge two data frames by Region
 merged <- merge(nocity,regionarea,by="Region")
 
 ### computed for the total area per region divided by number of cities
 areapercity = mutate(merged,merged$Area/merged$`n_distinct(CityProvince)`)
 
-### organized by CITY 
 ### group by region and city, then get the sum of total population for each city
 by_pop = group_by(population,Region,CityProvince)
 citypop=summarise(by_pop,sum(Population))
