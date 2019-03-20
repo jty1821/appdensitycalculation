@@ -12,7 +12,16 @@ Members:
 - Ty, John Kerwin
 
 
-FOR BARANGAY DENSITY:
+# FOR BARANGAY DENSITY:
+## - Open population.csv and regionarea.csv in R Studio and Check the Values
+## - Determine Number of Barangay Per Region (d.f=Count)
+## - Merge the data frames (Count and RegionArea,Data Frame = Mer)
+## - Add new Column in Mer,  for computing Area for Each Barangay. (Area/#Barangay in Region)
+## - Create smaller data frame with Region and area/barangay (d.f=Edited)
+## - Merge Edited and population.
+## - Create New Column that shows Population Density, Population/AreaperBarangay
+## - Create smaller Data frame by selecting Barangay and Population Density
+## - Arrange and Slice the data frame to shot the top 5
 
 
 # FOR CITY DENSITY:
